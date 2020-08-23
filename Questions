@@ -1,0 +1,277 @@
+Questions:
+***********
+
+1. Find the second smallest element in an array.  ===========> Done
+
+2. Find whether the given number is power of 10 or not.  =========> Done
+
+3. Find the pairs such that there sum will be equal to X.  ==========> 2 SUM
+
+4. given a dictionary, find if anagram of a string is present  ======> HashMap solution DONE
+
+
+5. Find the smallest sub array sum and return the sum  
+
+6. given an array scores [][] = {“jerry”,”65”},{“bob”,”91”}, {“jerry”,”23”}, {“Eric”,”83”}} Find the student with highest average score ==============> Done
+
+7. Implement a function that takes two unsigned integers as arguments namely numerator & denominator and outputs a string representing the fraction in decimal form. If there is a repeating and non-terminating digit that appears in the decimal form, write that in parenthesis. e.g. Input (UINT n, UINT d) Output (string) —– —— 2, 5 0.4 1, 2 0.5 1, 3 0.(3) 12, 5 2.4 11, 20 0.55 5, 3 1.(6) ===================> Done
+
+
+8. {
+
+    Given a matrix of numbers, the task was to collect the maximum numbers possible when going from bottom left corner of the matrix to top right corner of the matrix. The only two directions you can move are up and right. I was able to solve this. ==========> Done using DP bottum up approch
+
+    You are an avid rock collector who lives in southern California. Some rare and desirable rocks just became available in New York, so you are planning a cross-country road trip. There are several other rare rocks that you could pick up along the way. You have been given a grid filled with numbers, representing the number of rare rocks available in various cities across the country. Your objective is to find the optimal path from So_Cal to New_York that would allow you to accumulate the most rocks along the way.
+
+
+        Note: You can only travel either north (up) or east (right). b) Consider adding some additional tests in doTestsPass(). c) Implement optimalPath() correctly. d) Here is an example: ^ {{0, 0, 0, 0, 5}, New_York (finish) N {0, 1, 1, 1, 0}, So_Cal (start) {2, 0, 0, 0, 0}} S v The total for this example would be 10 (2+0+1+1+1+0+5).
+        {
+            {0, 0, 0, 0, 5},
+            {0, 1, 1, 1, 0},
+            {2, 0, 0, 0, 0}
+        }
+}
+
+
+9. Given a string ” A B A B C A B A B C D”, you have to compress it into the following format: A B * C * D. ============> Done KMP algo application
+    Here, till A B * of the output, A B repeats twice, but till A B * C *, A B A B C repeats twice. 
+
+10. Given two sorted arrays, find the median of them.  ===========> Done
+
+
+11. https://leetcode.com/problems/trapping-rain-water/ (Trapping the rainwater). =============> Done
+
+12. A variant of Knapsack (0-1 )- https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/ (She wanted the DP solution only.) ==============> Done
+
+13. There are some students, sitting in a circle. Each student is assigned a roll no (1 to n). There is a teacher who was given an initial roll no and he has to remove the student  with initial roll no. and then has to remove the student who was at that position starting from the removed student. Your function should return the last student left. Example: 2, 3, 1, 4, 5 start with 3, remove 3, then remove 5, then remove 1 (follow circle), then remove 4. Ans – 2. Problem is similar to 
+https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/ ==============> Done
+
+14. Given a log file, each line begins with some IP address, find the most frequent IP address. ===============> use hashmap
+
+15. https://www.geeksforgeeks.org/container-with-most-water/ ===========> Done
+
+16. Repeated Character Whose First Appearance is Leftmost ==========> Done
+
+17. Find the first maximum length even word from a string =========> Done
+
+18. https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/  ============> Done
+
+19. Given a dictionary, and a list of letters ( or consider as a string), find the longest word that only uses letters from the string. =========>  DONE
+
+=================================================
+=================================================
+
+1. terra byte of data of emplyee name push it to server database (efficient way) =====> SystemDesign
+
+2. Write a program to count frequency of each number in an array of elements without using a hash table.(implement a balanced binary search tree) =========> DONE
+
+3. String internal implementation
+
+4. How many types of Linked list?
+– Reallife application, example of Linked list, DLL, CLL?overflow and underflow conditions ==========> Done (need to recheck for application)
+
+5. A document (very big).. print only single occurenece in the order of initial arrangments? example this book is very good book. 
+output: this is very good
+
+6. Find the missing and repeating number in the array.https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/  =======> Done
+-hashcode custom function? how Java make its own 
+
+7.Merge sort and quick sort. Merge Sort vs Quick Sort (which is to be used with Arrays/LinkedLists). Quick Sort (Discussion on Pivot) – Randomized Quick Sort (Only basic discussion on this)
+
+8. Given an array of 1’s and 0’s. Segregate them.
+
+9. Given two sorted arrays with sizes m and n. Merge them into a third array of size m+n.
+
+10. A function is given that returns 1 with probability p and returns 0 with probability p-1. Write another function which calls this function and returns 1 and 0 with probability 1/2 each
+
+11. Given an array of numbers, arrange it in such a way that a1 > a2 < a3 > a4 < a5 > a6 ========> Done
+
+12. Given a linked list, reverse the elements from the beginning in blocks of two. Given: 7 → 4 → 9 → 2 → Null. Output: 4 → 7 → 2 → 9 → Null. ========> Done
+
+13. Given a Rubik’s cube of size n (Made of n^3 smaller cubes). You remove all that is visible from outside. How many cubes are left?
+
+14. Implement multiple stacks in one array. https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/
+
+15. In an array of positive integers, find Pythagorean triplets in O(n2) runtime.
+
+16. Algorithm Question: Given a matrix of integers , find the sub matrix with the maximum sum.
+
+17. Algorithm questions
+Given an array of integers find the maximum sub-array. Output the sum with start-end index.
+Given a matrix filled with X and 0(zero). Calculate the distance from nearest 0 for all cells marked with X.The distance of four neighboring cells(top,bottom,right,left) will be 1. For exampleInput:X X X
+X 0 X
+X X X
+Output:
+2 1 2
+1 0 1
+2 1 2
+
+18. Algorithm questions :
+Given a linked list with only three possible numbers 0,1,2, sort the list.
+Given a array of sorted but repeated integers , find the number of occurrence of a given number.
+
+19. Algorithm Question : Given two strings s1, s2. output all the ways in which these two strings can be merged while keeping the order of character same as they were in s1, s2. Design a recursive algorithm.
+Example : s1 : ab , s2: cd
+Output :
+abcd
+acbd
+acdb
+cabd
+cadb
+cdab
+
+20. https://www.geeksforgeeks.org/count-ways-reach-nth-stair/
+
+21. Implement queue using Stacks. First I solved it using two different stacks. Then they asked me to implement the queue using only 1.https://www.geeksforgeeks.org/queue-using-stacks/. 
+Implement queue using stacks and vice versa.
+
+22. Write a program to check whether a binary tree is BST or not.
+https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+
+23. Given a matrix containing only 0’s and 1’s. Each row will have some number of consecutive 0’s followed by some number of consecutive 1’s. We have to find the row containing maximum 0’s and also the number of 0’s in that row. At first, I suggested implementing Binary Search on every row to find the number of zeroes and then comparing the number of zeroes for every row. The interviewers said it is right but they wanted something better. Then I suggested implementing Binary Search on first row, store the index containing last 0 and then moving down in the matrix on that index. If you encounter a 1, then you can safely ignore that row. If you get a 0, then you can implement Binary Search on that row and update your stored values. The interviewers were satisfied with this solution.
+
+24. A variation of the following problem. The knight’s movement was slightly different than a traditional knight.
+    https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/
+
+25. Water trapping problem.https://www.geeksforgeeks.org/trapping-rain-water/.
+
+26.  https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
+27.  https://www.geeksforgeeks.org/design-a-stack-that-supports-getmin-in-o1-time-and-o1-extra-space/
+
+28.  https://www.geeksforgeeks.org/stock-buy-sell/ <- this question. I was asked to write the pseudo code.
+
+29.  You are given two arrays none of which is sorted. Tell me the most optimized solution for finding median of both arrays. Write pseudo code.
+
+30. Take an array of you own ans explain merge sort in that step by step and also explain how xomplexity comes to nlog(n).
+
+31. Then asked a question where given brackets, parenthesis, and/or curly braces, see if it is valid. Like {]}{})(, {}()[()].
+    https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
+
+32. Delete a node in BST. =======> DONE
+
+33. Intersection point of two linked list.
+
+34. Check if a linked list is palindrome or not
+
+35. https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+
+36. Given a list of transaction between friends who have to give or take some amount of money from one another. Now, they have to settle up with minimum number of transactions. Also, you have return a list of all the transactions. For example – If B owes A Rs. 200 : B->A = 200. Similarly, if C owes B Rs. 200 : C->B= 200. So the minimum number of transactions is 1 and that should be : C->A = Rs. 200
+
+37. https://www.geeksforgeeks.org/convert-ternary-expression-binary-tree/
+
+38. https://www.interviewbit.com/problems/ways-to-decode/
+
+39. .Next Smaller Number/ Next Greater Permutation
+
+40. Maximum distance between 2 nodes in an n-ary tree
+
+41. Given a tree with edge weights, find any path in the tree with maximum sum of edges.
+
+42. Given a maze, a start point and end point find the shortest path to reach the end point from the starting point.
+
+43. https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/
+
+44. Algorithms:
+1. Tree – Preoder, PostOrder, Inorder
+2. Graph – DFS vs BFS
+
+45. https://www.geeksforgeeks.org/number-flips-make-binary-string-alternate/
+
+46. https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/
+
+47. Given X and Y, wap to output X if the input is Y and Output Y if the input is X. No use of conditional operator is allowed.
+Solution : Use +, ^ operator.
+
+48. implementation of AVL trees
+
+49. Binary tree, BST, code for deletion in tree. The interviewer was more interested to know how I’m writing the recursive calls. He asked me to draw the recursive stack and show every activation record.
+
+50. Rotate matrix by 90, 180 , 270.
+
+51. Root to leaf path in a binary tree.
+
+52. A problem on string was given. I don’t remember exactly, but logic was LIS. Both recursion and DP code.
+
+53. print series 010203040506.. using multi-threading 1st thread will print only 0 2nd thread will print only even numbers and 3rd thread print only odd numbers. ====> Done
+
+54. How will you store key value pair in sorted way based on values
+
+55. (https://www.geeksforgeeks.org/coin-change-dp-7/
+
+56. https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/)
+
+57. Given an “insertions” list and a BST constructed from the insertions list by inserting elements from first to last,
+find all such possible insertion lists that would form the same BST as given in the input.
+
+Eg: Given input insertion list (10, 2, 1, 7, 14, 12) and the BST10
+/    \
+2       14
+/  \       /
+1     7    12
+one possible insertion list would be (10, 14, 2, 1, 7, 12) since inserting the nodes from first to last in that order would yield the same BST as above.
+another such insertion list would be (10, 2, 14, 7, 1, 12)
+
+58. Given an array of pos and neg integers, return the element, removing which the product of the remaining elements is maximum.
+
+59. https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/
+
+60. https://www.geeksforgeeks.org/check-string-substring-another/
+
+61. Given an array, find the largest decreasing subarray. Write the code for it. Now the array is circular, modify your code for that. Time complexity discussion. Similar to – https://www.geeksforgeeks.org/longest-increasing-subarray/
+
+62. Implement a custom iterator in java – there is a list of list (List<List<Integer>>). Write both – hasNext() and next() methods in such a way that hasNext() method should return true if the next list in the main list has some element present and next() method should return that element. Example: list – [[1, 2, 3], [4, 5], [6, 7]] then your custom iterator’s next() should return 4 after 3 and 6 after 5. Similarly, hasNext() will return false only at 7. I had to write the production level code.
+
+63. Given an utterance with misplaced spaces in between words. e.g. “I am an Indian” will look like – “Iam anI ndian”. You have to find out how will you derive correct utterance out of it. You are only given a dictionary of all possible English words. He was only interested in my approach to the problem.
+
+64. Given the postorder of a tree, how will you get inorder from it? I said there could be multiple possibilities then he asked how many?
+
+65.  https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/
+
+66. https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+
+67. https://www.geeksforgeeks.org/print-left-view-binary-tree/
+
+68. Height of a Tree
+
+69. Design a suitable data structure to play a game of Jigsaw Puzzle.
+
+70. Implement a suitable data structure for which following operations are done in O(1)
+insert(int element)
+delete (int element)
+getRandom() -> Return any element from Data Structure with equal probability   ==========> Done
+
+71. Find first non-repeating character in very long string.link: Given a string, find its first non-repeating character
+After this, he modified the question, now m machines and n cores are given.
+Modify the above algorithm to leverage the power of the Multi-Cluster System.
+With some hints, I was able to design an algorithm (Based on Map-Reduce framework)
+
+72. The question was modification of this Find the first circular tour that visits all petrol pumps. The additional condition here was to make sure that petrol utilization was minimum.
+
+73. Given a string that can contain special characters, the task was to find if string formed using characters (ignoring special ones) is a palindrome.
+
+74. Find a pair that has the sum closest of a given number X.
+
+75. https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/
+
+76. https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
+
+77. https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/
+
+78. A number of currency conversions rates are given like USD to INR, INR to Euro, Euro to Yen, etc. We need to convert a currency into some other. By following each conversion we will get some error so we need to minimize the error. I first gave DFS and DSU solution but this question was narrowed down to BFS.
+
+79. Suppose you have a data of 3 GB and 3 pen drives of size 1 GB each. Store the data in such a way that if one of the pen drives is lost, we can still recover the missing data. I tried to solve this question by XORing the values
+
+80. https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
+
+81. https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
+
+82. https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/
+
+83. Reversing a LinkedList using recursion.
+
+84. //www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+
+85. Given a method which returns a random number from 0–9 with equal probability.
+
+86. Given list of numbers return least 10 numbers. Follow up: return least k numbers.

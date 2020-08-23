@@ -1,0 +1,47 @@
+DP problems:
+
+Following questions are the most popular dynamic programming problems for interviews :
+
+Given a matrix consisting of 0's and 1's, find the maximum size sub-matrix consisting of only 1's.
+
+Given an array containing both positive and negative integers, find the contiguous array with the maximum sum.
+
+Longest Increasing Subsequence - Find the length of the longest subsequence of a given sequence such that all the elements are sorted in increasing/non-decreasing order.
+There are many problems which reduce to the this problem such as box stacking and the building bridges. These days the interviewers expect an NLogN solution.
+
+Edit Distance - Given two strings and a set of operations Change (C), insert (I) and delete (D) , find minimum number of edits (operations) required to transform one string into another.
+
+0/1 Knapsack Problem - A thief robbing a store and can carry a maximal weight of W into their knapsack. There are n items and ith item weigh wi and is worth vi dollars. What items should thief take?
+
+Balanced Partition - You have a set of n integers each in the range 0 … K. Partition these integers into two subsets such that you minimize |S1 – S2|, where S1 and S2 denote the sums of the elements in each of the two subsets.
+
+Coin Change - Given a value N, if we want to make change for N cents, and we have infinite supply of each of S = { S1, S2, .. , Sm} valued coins, how many ways can we make the change?
+
+Longest Common Subsequence - Find the longest common subsequence of two strings A and B where the elements are letters from the two strings and they should be in the same order.
+
+Longest Palindromic Subsequence - The question is same as above but the subsequence should be palindromic as well.
+
+Minimum Number of Jumps - Given an array of integers where each element represents the maximum number of steps that can be made forward from that element, find the minimum number of jumps to reach the end of the array (starting from the first element).
+
+TusharRoy:
+
+1) 0/1 knapsack problem - Given weight/price of certain items with 1 quantity each and maximum weight allowed, how to pick items such that sum of weight of items picked is less than or equal to maximum allowed weight and value of those items is maximized. Following are my videos discussing both topdown and bottom up approach.
+
+2) Coin changing problem - Given coins of certain denominations with unlimited quantity and a total, how many minimum number of coins would be needed to form that total. Below is my video link for both bottom up and top down approach.
+
+3) Longest Increasing Subsequence - Given an array, find a subsequence which is longest in length and increasing in order. Below is both n^2 and nlogn solutions.
+
+4) Minimum edit distance - Given two strings how many minimum edits would it take to convert one string to other string. By edit I mean you can add, update or delete characters in the string.
+
+5) Longest common subsequence - Given two strings find a subsequence common in both the string and longest. Its other variation is longest common substring between two strings. Video for both is below.
+
+6) Text justification problem - Given some strings and a width of a screen. How do you align the strings so that they do not exceed the width of the screen. Or in other words where do you put line breaks between strings so that it looks as pretty as possible or text looks as aligned as possible.
+
+7) Word break problem - You are given a long work which maybe combination of different words. You are also given a dictionary. You have to tell if words in dictionary can be combined to form this long word.
+
+8) String interleaving problem - You are given 3 strings. You have to tell if first and second string can interleave with each other to form 3rd string or not.
+
+9. Subset sum problem - You are given sum numbers and a total value. You have to tell if some subset of these numbers can sum up to the given total. Another simple variation is partition problem where you have to divide the set of numbers into 2 groups where sum of each group is same.
+
+10. Optimal strategy for the game - Two players play this game. You are given an array of numbers. Each player take turns to pick from either end of array. How do you pick to maximize your chance of win. Player with highest sum of all the picked values is the winner.
+

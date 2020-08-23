@@ -1,0 +1,112 @@
+Puzzles:
+1. You have got 27 coins, each of them is 10g, except for 1. The 1 different coin is 9g or 11g. You should use balance scale that compares what’s in the two pans. What is the minimum no of weighings that can determine the different coin.? 3/4 ====> divide 3*9 => 3*3 => 3*1
+[
+	Divide 27 into group of 3 (3*9), Weigh group1(G1) with group2(G2), and then group1 with group3(G3).
+	If G1 = G2, the different one is in G3. if G1 > G3, the different one is less weighed(9g); else if G1< G3, then it is more weighed(11g)
+	If G1 > G2, and G1 > G3, then G1 has the different one and is more weighed(11g)
+	if G1 < G2 and G1 < G3, then G1 has the different one and is less weighed(9g)
+	if G1 > G2, and G1 = G3, then G2 has the different one and is less weighed(9g)
+	if G1 < G2 and G1 = G3, then G2 has the different one and is more weighed (11g)
+	In short, after 2 weighing, we have 9 coins, and idea about the different coin, whether it is less weighed or not. Now, again divide this into 3 groups (3*3), weigh group1 with group2. If it is equal, we know the different coin is in last group. If it differs, with our idea of whether the coin is less weighed or more weighed,we can identify the group with diiferent coin.
+	We are left with 3 coins now. Now, divide it again into 3(3*1). Weigh coin1 and coin2. If is equal, the third coin is the different one. If it differs, again, based on our idea of whether it is less weighed or more weighed, we can choose coin1 or coin2.
+	1k views · View Upvoters
+]
+
+2. Three ants in corners of triangle puzzle. ====>
+[
+	Since every ant has two choices (pick either of two edges going through the corner on which ant is initially sitting), there are total 2^3 possibilities.
+	Out of 2^3 possibilities, only 2 don’t cause collision. So, the probability of collision is 6/8 and the probability of non-collision is 2/8.
+]
+
+3. The 4 people, bridge and one torch puzzle A(1) B(2) C(5) D(8). ====> A+B -> C+D -> A+B
+
+4. 100 gold coins and 5 pirates puzzle. ===> 98, 0, 1, 0, 1
+
+5. There a n number of zoos numbered from 1 to n. There are four kinds of animals in the zoos- Ant, Elephant, Cat and Dog. Ant and Elephant are enemies. Cat and Dog are enemies. There is a van which is used to pick animals from a zoo and drop to other zoo. Enemies can’t be in the van at the same time. Given two sequences PICK and DROP from 1 to n describing animals to be picked and dropped respectively from each zoo. We have to tell whether it is possible for the van to go from Zoo-1 to Zoo-n and complete all these pickups and drops without having enemies in the van at any point of time.
+
+6. There are 6 couples(so total 12 people). Find the number of ways in which you can select 4 people( 2 M and 2 F) such that none of them is a couple. ===> (12C1*10C1*8C1*6C1)/(4!*12C4)
+[
+	The number of ways the chosen 4 can be unmarried = 12C1 * 10 C1 * 8C1 * 6C1 = 12*10*8*6
+
+	Because the above number is a permutation (order is important), we need to convert it into combination (order is not important as we are choosing) i.e., The actual ways without regard for order = (12*10*8*6)/4!
+	= 5*8*6
+	The required probability = (5*8*6)/12C4 = 16/33
+]
+
+8. Water Jug Puzzle. ====>
+[
+	Yes, we can measure all from 1G to 9G.
+
+	4G: Simply fill the 4G jug completely.
+	9G: Simply fill the 9G jug completely.
+	5G: Fill the 9G jug fully. Now transfer water from 9G to 4G till 4G gets full. Now 9G will have 5Gallons of water. Hence, measured 5G
+	1G: Fill the 9G jug to its maximum. Now transfer water from 9G to 4G till 4G gets full. Empty the 4G jug. Again transfer from 9G to 4G till 4G gets full. Now we are left with 1G in 9G jug.
+	8G: Fill up 4G and empty it into 9G. Again fill up 4G and empty it into 9G. Now 9G has 8 Gallons of water.
+	3G: Firstly, fill the 4G jug and empty it into 9G jug. Again fill 4G and empty it into 9G.
+	Again repeat the same procedure. So now 4G jug will have 3G amount of water and 9G will be full. Hence, measured 3G.
+	7G: Measure 3G as mentioned above. Now transfer this 3 Gallons of water from 4G to 9G. And now completely fill 4G jug. Now we have 4 Gallons in 4G jug and 3 Gallons in 9G jug. Hence, measured 7G.
+	2G: As mentioned above, firstly measure up to 7G. The scenario is that 4G jug is full and 9G jug has 3G water. Transfer the water from 4G to 9G so that 4G becomes empty and 9G measures 7G. Now completely fill 4G and then start transferring water to 9G till 9G becomes full. Now we will be left with only 2G in 4G jug. Hence, measured 2G
+	6G: Repeat the same procedure till measuring 2G as stated above. Now empty the 9G jug and transfer 2G from 4G jug to 9G jug. And now fill up the 4G jug completely. Hence, we have 4 Gallons in 4G jug and 2 Gallons in 9G jug. Thus measuring 6G.
+]
+
+9. https://www.geeksforgeeks.org/puzzle-round-table-coin-game/
+Variant of this questions on Square table instead of Round Table. ====> Place 1st coin at center and then at diameters later on.
+
+10.  fit balls in the given box
+
+11. puzzle. Given 3 trains which start at the same time and place and we can transfer fuel from one train to another such that limit does not exceed given X (for all trains), find the maximum distance covered by any of the trains. I was able to think of approach after a hint. We can transfer fuel from one train to other after 1/3 interval. This can be generalized to 1/n for n trains. The resultant distance will be a harmonic progression.
+
+12. 25 horses race puzzle. =======> 7
+
+13. https://www.geeksforgeeks.org/puzzle-26-know-average-salary-without-disclosing-individual-salaries/ ====> randam number + salary -> pass => - randam number -> pass
+
+=================================
+System Design:
+
+=================================
+Java Questions:
+1: Java runtime and compile polymorphism
+2: Overloading vs overriding in inheritance
+3: Basic questions on threads and its methods.
+4: Questions on hashmap and hashset. =============> Done
+6: equals and hashcode questions in various scenerios.
+7: Few try catch problem scenerios.
+8: Comparator vs comparable java. ===> if sorting of objects needs to be based on natural order then use Comparable whereas if you sorting needs to be done on attributes of different objects, then use Comparator in Java.
+
+
+Explain RESTful web services. Jersey syntax
+Then some discussion on it particularly involving REST services. Then they made me write an HTTP GET method for a situation in an efficient way.
+This round started with a lot of resume based questions. Why do we use AJAX, jQuery, RequireJS? What are their uses and why do we need them? What is the need for modular loading?
+
+Resume Based, Questions on React.js and Redux (based on current role)
+Questions on LifeCylce Hooks, Gulp, Testing Single Page Applications
+
+How to improve API response time / optimise the APIs ?
+
+What is lambda ? How does it improve/help in implementation ?
+What difference does lambda make in memory and processing from JVM perspective?
+What is functional interface ? Some examples of functional interface?
+Difference between Synchronized Hashmap, ConcurrentHashmap, Hashmap?  ===============> Done
+
+why we use red-black tree over the AVL tree
+
+Switches in Billing event
+
+Singleton class and ways to achieve that (Deep Discussion on Early Initialization vs Late Initialization vs Bill Pugh)
+
+Siben - to ask design pattern used in our project
+
+-OOPs
+-equals and == operator ======> done
+– String internal implementation
+– JVM internal process (.caa to bytecode, how byte code understand by diff OS) =====> Due to JVM
+– Count Character count (Optimized)
+-Why Arg is paasing in main method ====> Done
+-Is it possible == opertaor is true but equal is false =====> yes
+-What immuatable objects
+-How to create immutbale classes with example
+-String immutability, explain? =====> no one can change it and for wide reusablity, caching, used as connection string.
+-Arraylist vs Linkedlist vs HashMap
+-how jar is formed, how codes are deployed? ====> jar cf jarfilename input Dir
+-How many types of Linked list?
+– Reallife application, example of Linked list, DLL, CLL?
